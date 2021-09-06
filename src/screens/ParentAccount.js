@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import MainButton from '../components/MainButton';
 import SimpleTextInput from '../components/SimpleTextInput';
 import DropDown from '../components/DropDown';
+import HorizontalScrollView from '../components/HorizontalScrollView';
 export default function ParentAccount({ navigation }) {
   return (
       <View style={styles.container}> 
@@ -11,6 +12,9 @@ export default function ParentAccount({ navigation }) {
       <SimpleTextInput text="" inputStyle={{width: 170}}></SimpleTextInput> 
     </View>
     <DropDown></DropDown>
+    <ScrollView>
+    <HorizontalScrollView></HorizontalScrollView>
+    </ScrollView>
     <SimpleTextInput text="Email id" inputStyle={{width: 350}}></SimpleTextInput> 
     <MainButton btnName="Save" style={{top:50}}></MainButton>
     </View>

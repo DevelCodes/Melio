@@ -76,9 +76,9 @@ const styles = StyleSheet.create({
       fontSize: 100,
       top:200
   },
-  item:{
-    alignSelf:"center",
+  item:{ 
     alignItems: "center",
+    justifyContent:"center",
     borderRadius:15,
   },
   itemText:{
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     alignSelf:"center",
     backgroundColor:'#ffffff',
     width: width/1.3,
-    height:70,
+    height:50,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,
@@ -101,14 +101,13 @@ const styles = StyleSheet.create({
   },
   text:{
     width: 280,
-    height: 64,
-    left: -50,
+   left:20,
     top:15,
     fontFamily: 'hk-grotesk.bold-legacy',
     fontStyle: 'normal',
     fontWeight: '600',
-    fontSize: 22,
-    textAlign: 'center',
+    fontSize: 18,
+    textAlign: 'left',
     color: colors.dark
   }
 });
@@ -138,7 +137,7 @@ const ExpandableComponent = ({item , onClickFunction}) => {
                         <TouchableOpacity
                         key={key}
                         style= { styles.content}
-                        >
+                        > 
                             <Text style= {styles.text}>
                                 {key}. {item.val}
                             </Text>
